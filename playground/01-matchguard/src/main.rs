@@ -36,7 +36,7 @@ fn main() {
     let check = match func {
         "matchguard" => matchguard::check_thing,
         "itemize" => itemize::check_thing,
-        _ => panic!("unknown ceck function: {}", func)
+        _ => panic!("unknown check function: {}", func)
     };
 
     println!("unknown:        {:?}", check(Thing{size: 0,   typ: Typ::Unknown}));
